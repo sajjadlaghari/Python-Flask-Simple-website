@@ -1,6 +1,6 @@
 ﻿### Clone Project and intsall requirement.txt packages
  
-![screencapture-127-0-0-1-5000-2023-07-20-00_49_41](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/043b5d18-f96c-463d-9599-2abe50e4841b)
+![screencapture-127-0-0-1-5000-2023-07-20-00_55_38](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/f3d46b04-5028-4e53-ad4d-c9ff75f94783)
 
 ![screencapture-127-0-0-1-5000-about-us-2023-07-20-00_49_51](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/01649a92-70bb-4cb5-8755-79d7f8a060fd)
 
