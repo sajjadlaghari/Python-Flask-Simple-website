@@ -69,7 +69,7 @@ def register():
     password = request.form['password']
     collection =  db["user"]
 
-    user = collection.find_one({"email": email, "password": password})
+    user = collection.find_one({"email": email})
 
     if user: 
         flash('Email Already taken', 'error')
@@ -81,8 +81,8 @@ def register():
         collection =  db["user"]
         data = {"name": name, 'email':email,'password':password}
         collection.insert_one(data)
-        flash('login Successfully', 'error')
-        return redirect(url_for('register'))
+        flash('Register Successfully', 'error')
+        return redirect(url_for('login'))
 
 @app.route('/login',methods=['POST'])
 def login():
