@@ -7,36 +7,53 @@
 {% block content %}
 
 <div class="container">
+    
     <div class="row m-5 no-gutters shadow-lg">
+        
         <div class="col-md-6 d-none d-md-block">
             <img src="/static/team/register.avif" class="img-fluid" style="min-height:100%;" />
         </div>
         <div class="col-md-6 bg-white p-5">
-            <h3 class="pb-3">Login Form</h3>
-            <div class="form-style">
-                <form>
+            <h3 class="pb-3" style="color: #000; text-align: center;">Sign Up</h3>
+         
+           
+            <div class="form-style" style="margin-top: 20%;">
+
+               
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                
+                    {% for message in messages %}
+                    <span style="  color: red; list-style-type: none; text-align: center;">{{ message }}</span>
+                    {% endfor %}
+         
+                {% endif %}
+                {% endwith %}
+                <form method="POST" action="/register">
+                   
                     <div class="form-group pb-3">
-                        <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1"
+                        <input type="name" name="name" placeholder="Name" class="form-control" id="exampleInputEmail1"
                             aria-describedby="emailHelp">
                     </div>
                     <div class="form-group pb-3">
-                        <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+                        <input type="email" placeholder="Email" name="email" class="form-control"
+                            id="exampleInputPassword1">
                     </div>
 
                     <div class="form-group pb-3">
-                        <input type="password" placeholder="Confirm Password" class="form-control"
+                        <input type="password" name="password" placeholder=" Password" class="form-control"
                             id="exampleInputPassword1">
                     </div>
 
                     <div class="pb-2">
                         <button type="submit" class="btn btn-dark w-100 font-weight-bold mt-2">Sign Up</button>
                     </div>
+                    <div class="text-center mt-4">
+                    <a href="/login" style="text-decoration: none;color: #000;">Already have an account? <span style="font-weight: bold; color: blue;">Login</span></a>
+
+                    </div>
                 </form>
-                <div class="sideline">OR</div>
-                <div>
-                    <button type="submit" class="btn btn-primary w-100 font-weight-bold mt-2"><i class="fa fa-facebook"
-                            aria-hidden="true"></i> Login With Facebook</button>
-                </div>
+
 
             </div>
 

@@ -653,55 +653,111 @@ button.contact_form_submit {
 img {
   width: 100%;
 }
-.login {
-  height: 1000px;
-  width: 100%;
 
-  position: relative;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body {
+  background: rgb(60, 60, 60);
+  font-family: Raleway, sans-serif;
+  color: #666;
 }
-.login_box {
-  width: 1050px;
-  height: 600px;
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.login {
+  margin: 20px auto;
+  padding: 40px 50px;
+  max-width: 27%;
+  border-radius: 5px;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 1px 4px 22px -8px #0004;
-  display: flex;
-  overflow: hidden;
+  box-shadow: 1px 1px 1px #666;
 }
-.login_box .left {
-  width: 41%;
-  height: 100%;
-  padding: 25px 25px;
+  .login input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    border-radius: 2px; 
+    font-family: Raleway, sans-serif;
+  }
+
+.login input[type=text],
+.login input[type=password] {
+  border: 1px solid #c0c0c0;
+  transition: .2s;
 }
-.login_box .right {
-  width: 59%;
-  height: 100%;
+
+.login input[type=text]:hover {
+  border-color: #F44336;
+  outline: none;
+  transition: all .2s ease-in-out;
+} 
+
+.login input[type=submit] {
+  border: none;
+  background: #EF5350;
+  color: white;
+  font-weight: bold;  
+  transition: 0.2s;
+  margin: 20px 0px;
 }
-.left .top_link a {
-  color: #452a5a;
-  font-weight: 400;
+
+.login input[type=submit]:hover {
+  background: #F44336;  
 }
-.left .top_link {
-  height: 20px;
-}
-.left .contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  height: 100%;
-  width: 73%;
-  margin: auto;
-}
-.left h3 {
-  text-align: center;
+
+  .login h2 {
+    margin: 20px 0 0; 
+    color: #EF5350;
+    font-size: 28px;
+  }
+
+.login p {
   margin-bottom: 40px;
-  color: #000;
 }
+
+.links {
+  display: table;
+  width: 100%;  
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+  .login h2,
+  .login p,
+  .login a {
+    text-align: center;    
+  }
+
+.login a {
+  text-decoration: none;  
+  font-size: .8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+
 .left input {
   border: none;
   width: 80%;
