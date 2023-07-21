@@ -36,7 +36,7 @@ def contact():
     # Use the user_id to fetch user data from the database if needed
         return redirect(url_for('admin'))
     else:
-       return render_template('about-us.html')
+       return render_template('contact-us.html')
     
 
 @app.route('/login',methods=['GET'])
