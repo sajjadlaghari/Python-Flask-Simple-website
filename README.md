@@ -9,3 +9,6 @@
 ![image](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/15742f76-bdf5-4023-b600-600af694fa07)
 
 ![screencapture-127-0-0-1-5000-register-2023-07-21-11_52_28](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/bc1fdb3c-c5f4-4f47-aae8-9c1d1c1b5c0b)
+
+
+![image](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/f7b6d86c-2d1f-43a1-9280-933950c70511)
