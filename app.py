@@ -13,24 +13,52 @@ app.secret_key = "test11"
 
 @app.route('/')
 def hello():
-    return render_template('index.html')
+    if 'user' in session:
+    # Use the user_id to fetch user data from the database if needed
+        return redirect(url_for('admin'))
+    else:
+        return render_template('index.html')
+
+    
 
 @app.route('/about-us')
 def about():
-    return render_template('about-us.html')
+    if 'user' in session:
+    # Use the user_id to fetch user data from the database if needed
+        return redirect(url_for('admin'))
+    else:
+       return render_template('about-us.html')
+   
 
 @app.route('/contact-us')
 def contact():
-    return render_template('contact-us.html')
+    if 'user' in session:
+    # Use the user_id to fetch user data from the database if needed
+        return redirect(url_for('admin'))
+    else:
+       return render_template('about-us.html')
+    
 
 @app.route('/login',methods=['GET'])
 def login_form():
-    return render_template('login.html')
+
+    if 'user' in session:
+    # Use the user_id to fetch user data from the database if needed
+        return redirect(url_for('admin'))
+    else:
+       return render_template('login.html')
+    
+    
 
 
 @app.route('/register')
 def register_form():
-    return render_template('register.html')
+    if 'user' in session:
+    # Use the user_id to fetch user data from the database if needed
+        return redirect(url_for('admin'))
+    else:
+       return render_template('register.html')
+    
 
 @app.route('/register',methods=['POST'])
 def register():
