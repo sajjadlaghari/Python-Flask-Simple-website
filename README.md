@@ -8,4 +8,4 @@
 
 ![image](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/15742f76-bdf5-4023-b600-600af694fa07)
 
-![screencapture-127-0-0-1-5000-register-2023-07-20-00_52_30](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/bc7a66d7-d147-43e6-b8b3-b2812456e52c)
+![screencapture-127-0-0-1-5000-register-2023-07-21-11_52_28](https://github.com/sajjadlaghari/Python-Flask-Simple-website/assets/68752819/bc1fdb3c-c5f4-4f47-aae8-9c1d1c1b5c0b)
